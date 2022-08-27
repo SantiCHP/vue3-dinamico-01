@@ -26,7 +26,7 @@ const classCounter = computed(() => {
 </script>
 
 <template>
-  <div class="container text-center mt-3">
+  <div class="container d-flex justify-content-center mt-3">
     <h1 class="text-danger">Hey! {{ name.toUpperCase() }}</h1><br>
     <h2 :class="classCounter">{{ counter }}</h2>
     <div class="btn-group mt-4">
