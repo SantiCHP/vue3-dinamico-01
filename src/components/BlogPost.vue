@@ -19,7 +19,7 @@ defineProps({
 </script>
 
 <template>
-    <div class="card mt-2">
+    <div class="card">
         <div class="card-body">
             <h5 class="card-title">{{ id }} - {{ title }}</h5>
             <p>{{body}}</p>
