@@ -9,9 +9,13 @@ defineProps({
     body: {
         type: String,
         default: 'Sin descripción'
-    }
-})
+    },
+    cambiarFavorito: Function
+});
 
+// const emit = defineEmits(['cambiarFavoritoNombre']);
+
+// emit(['cambiarFavoritoNombre', title)
 </script>
 
 <template>
@@ -21,12 +25,8 @@ defineProps({
             <p>{{body}}</p>
             <button 
                 class="btn btn-outline-primary" 
-                @click="$emit('cambiarFavorito', title)" 
-                data-toggle="tooltip"
-                data-placement="top" 
-                data-animation="fade"
-                data-animation-delay="0.5s"
-                title="Favorito"
+                @click="cambiarFavorito(title)" 
+                
             >
                 ❤️
             </button>
